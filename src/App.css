@@ -10,6 +10,7 @@ body, html {
 #calc-container{
   width: 350px;
   height: 400px;
+  max-width: 95vw;
   background-color: black;
   border: 5px solid black;
 }
@@ -71,3 +72,4 @@ button:hover{
   font-size: 0.95rem;
   color: orange;
 }
+

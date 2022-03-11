@@ -132,7 +132,15 @@ class Calculator extends React.Component{
         }
       break;
       default:
-        if (this.state.lastInputIsOperator === true){
+        if (this.state.lastInputIsEqual === true){
+          this.setState({
+            newNumber: event.target.id,
+            operation: event.target.id,
+            lastInputIsOperator: false,
+            lastInputIsEqual: false
+          })
+        }
+        else if (this.state.lastInputIsOperator === true){
           this.setState({
             newNumber: event.target.id,
             operation: this.state.operation + event.target.id,
